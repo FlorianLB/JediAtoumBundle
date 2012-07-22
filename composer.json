@@ -1,0 +1,25 @@
+{
+    "name": "jedi/atoum-bundle",
+    "description": "Bundle around Atoum unit testing framework",
+    "type": "symfony-bundle",
+    "keywords": ["atoum", "test", "unit testing"],
+    "homepage": "https://github.com/FlorianLB/AtoumBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Lonqueu-Brochard",
+            "email": "dev@florianlb.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.*.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Jedi\\AtoumBundle": ""
+        }
+    },
+
+    "target-dir": "Jedi/AtoumBundle"
+}
