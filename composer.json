@@ -13,13 +13,13 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.*.*"
+        "symfony/symfony": "2.*",
+        "mageekguy/atoum": "dev-master"
     },
     "autoload": {
         "psr-0": {
             "Jedi\\AtoumBundle": ""
         }
     },
-
     "target-dir": "Jedi/AtoumBundle"
 }
