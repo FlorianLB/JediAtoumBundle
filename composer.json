@@ -3,23 +3,28 @@
     "description": "Bundle around Atoum unit testing framework",
     "type": "symfony-bundle",
     "keywords": ["atoum", "test", "unit testing"],
-    "homepage": "https://github.com/FlorianLB/AtoumBundle",
+    "homepage": "https://github.com/FlorianLB/JediAtoumBundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Florian Lonqueu-Brochard",
             "email": "dev@florianlb.fr"
+        },{
+        "name": "Community contributors",
+        "homepage": "https://github.com/FlorianLB/JediAtoumBundle/graphs/contributors"
         }
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.*"
+        "symfony/framework-bundle": "2.*"
+    },
+    "suggest": {
+        "mageekguy/atoum": "Use atoum with composer"
     },
     "autoload": {
         "psr-0": {
             "Jedi\\AtoumBundle": ""
         }
     },
-
     "target-dir": "Jedi/AtoumBundle"
 }
