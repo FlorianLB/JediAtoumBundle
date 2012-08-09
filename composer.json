@@ -9,7 +9,12 @@
         {
             "name": "Florian Lonqueu-Brochard",
             "email": "dev@florianlb.fr"
-        },{
+        },
+        {
+            "name": "Stéphane Py",
+            "email": "py.stephane1@gmail.com"
+        },
+        {
         "name": "Community contributors",
         "homepage": "https://github.com/FlorianLB/JediAtoumBundle/graphs/contributors"
         }
