@@ -1,9 +1,9 @@
 {
-    "name": "jedi/atoum-bundle",
+    "name": "rezzza/atoum-bundle",
     "description": "Bundle around Atoum unit testing framework",
     "type": "symfony-bundle",
     "keywords": ["atoum", "test", "unit testing"],
-    "homepage": "https://github.com/FlorianLB/AtoumBundle",
+    "homepage": "https://github.com/Rezzza/AtoumBundle",
     "license": "MIT",
     "authors": [
         {
@@ -13,13 +13,13 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.*"
+        "symfony/framework-bundle": "2.*",
+        "mageekguy/atoum": "dev-master"
     },
     "autoload": {
         "psr-0": {
             "Jedi\\AtoumBundle": ""
         }
     },
-
     "target-dir": "Jedi/AtoumBundle"
 }
