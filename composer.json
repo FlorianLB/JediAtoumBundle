@@ -1,9 +1,9 @@
 {
-    "name": "rezzza/atoum-bundle",
+    "name": "jedi/atoum-bundle",
     "description": "Bundle around Atoum unit testing framework",
     "type": "symfony-bundle",
     "keywords": ["atoum", "test", "unit testing"],
-    "homepage": "https://github.com/Rezzza/AtoumBundle",
+    "homepage": "https://github.com/FlorianLB/AtoumBundle",
     "license": "MIT",
     "authors": [
         {
