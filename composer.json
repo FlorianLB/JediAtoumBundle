@@ -3,7 +3,7 @@
     "description": "Bundle around Atoum unit testing framework",
     "type": "symfony-bundle",
     "keywords": ["atoum", "test", "unit testing"],
-    "homepage": "https://github.com/FlorianLB/AtoumBundle",
+    "homepage": "https://github.com/FlorianLB/JediAtoumBundle",
     "license": "MIT",
     "authors": [
         {
