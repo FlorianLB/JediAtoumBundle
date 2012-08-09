@@ -10,7 +10,7 @@ This bundle provides a (very) simple integration of [Atoum](https://github.com/m
 ```json
 {
     "require": {
-        "FlorianLB/JediAtoumBundle": "dev-master",
+        "jedi/atoum-bundle": "dev-master",
         "mageekguy/atoum": "dev-master"
     },
     "config": {
@@ -24,7 +24,7 @@ This bundle provides a (very) simple integration of [Atoum](https://github.com/m
 ```json
 {
     "require": {
-        "FlorianLB/JediAtoumBundle": "dev-master"
+        "jedi/atoum-bundle": "dev-master"
     }
 }
 ```
