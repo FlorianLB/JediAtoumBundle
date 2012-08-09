@@ -2,6 +2,10 @@
 
 namespace Jedi\AtoumBundle\Tests\Units;
 
+use Symfony\Bundle\FrameworkBundle\Client;
+use Symfony\Component\Finder\Finder;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+
 /**
  * WebTestCase
  *
@@ -69,7 +73,7 @@ abstract class WebTestCase extends Test
      */
     protected static function getKernelClass()
     {
-        $dir = $this->getKernelDirectory();
+        $dir = self::getKernelDirectory();
 
         $finder = new Finder();
         $finder->name('*Kernel.php')->depth(0)->in($dir);
@@ -91,9 +95,9 @@ abstract class WebTestCase extends Test
      *
      * @return string
      */
-    public function getKernelDirectory()
+    protected static function getKernelDirectory()
     {
-        $dir = getcwd();
+        $dir = getcwd().'/app';
         if (!is_dir($dir)) {
             $dir = dirname($dir);
         }
