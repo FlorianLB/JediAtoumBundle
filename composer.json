@@ -9,12 +9,17 @@
         {
             "name": "Florian Lonqueu-Brochard",
             "email": "dev@florianlb.fr"
+        },{
+        "name": "Community contributors",
+        "homepage": "https://github.com/FlorianLB/JediAtoumBundle/graphs/contributors"
         }
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/framework-bundle": "2.*",
-        "mageekguy/atoum": "dev-master"
+        "symfony/framework-bundle": "2.*"
+    },
+    "suggest": {
+        "mageekguy/atoum": "Use atoum with composer"
     },
     "autoload": {
         "psr-0": {
