@@ -11,8 +11,7 @@ abstract class Test extends atoum\test
      */
     public function __construct(atoum\factory $factory = null)
     {
-       $this->setTestNamespace('Tests\Units');
-       parent::__construct($factory);
+        $this->setTestNamespace('Tests\Units');
+        parent::__construct($factory);
     }
 }
-?>

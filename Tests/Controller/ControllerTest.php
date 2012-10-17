@@ -16,4 +16,3 @@ abstract class ControllerTest extends WebTestCase
         $this->setTestNamespace('Tests');
     }
 }
-?>
