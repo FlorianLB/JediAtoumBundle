@@ -100,7 +100,7 @@ class BarController extends ControllerTest
 
         $this
             ->integer($response->getStatusCode())
-                ->isEqualTo($statusCode)
+                ->isEqualTo(200)
 
             ->string($response->headers->get('Content-Type'))
                 ->isEqualTo('application/json')
