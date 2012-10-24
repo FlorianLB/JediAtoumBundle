@@ -40,6 +40,7 @@ Don't forget to load this class with your favorite method (require, autoload, ..
 ``` php
 <?php
 
+//if you don't use a bootstrap file, you need to require the autoload
 require __DIR__ . '/../../../../../../../vendor/autoload.php';
 
 // use path of the atoum.phar as bello if you don't want to use atoum via composer
@@ -54,7 +55,7 @@ class helloWorld extends Units\Test
 
 ## Web test case
 
-You can create easily a kernel environment:
+You can create easily a kernel environment :
 
 ``` php
 <?php
@@ -72,6 +73,38 @@ class helloWorld extends Units\WebTestCase
 }
 ```
 
-## Known issues
+### Known issues
 
 - The path of the AppKernel cannot be find, override the method `getKernelDirectory` and add the path to your `app` directory.
+
+## Test a controller
+
+You can test your controller with the ControllerTest class (it extends WebTestCase) :
+
+``` php
+<?php
+
+namespace vendor\FooBundle\Tests\Controller;
+
+use Jedi\AtoumBundle\Tests\Units\WebTestCase;
+use Jedi\AtoumBundle\Tests\Controller\ControllerTest;
+
+class BarController extends ControllerTest
+{
+    //test a json api method
+    public function testGet()
+    {
+        $client   = static::createClient();
+        $crawler  = $client->request('GET', '/api/foobar');
+        $response = $client->getResponse();
+
+        $this
+            ->integer($response->getStatusCode())
+                ->isEqualTo($statusCode)
+
+            ->string($response->headers->get('Content-Type'))
+                ->isEqualTo('application/json')
+        ;
+    }
+}
+```
