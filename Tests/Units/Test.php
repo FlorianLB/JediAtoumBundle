@@ -34,7 +34,7 @@ abstract class Test extends atoum\test
      * $this->getRandomString(10, self::CHARACTERS_NUMERIC)
      *     => random numeric string of length 10
      *
-     * $this->getRandomString(10, self::CHARACTERS_NUMERIC & self::CHARACTERS_ALPHA_LOWER)
+     * $this->getRandomString(10, self::CHARACTERS_NUMERIC + self::CHARACTERS_ALPHA_LOWER)
      *     => random lower case alpha numeric string of length 10
      *
      * $this->getRandomString(32, '0123456789ABCDEF')
