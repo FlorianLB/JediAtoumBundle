@@ -1,4 +1,4 @@
-/!\ This bundle is now deprecated, the replacement bundle is [atoum/AtoumBundle](https://github.com/atoum/AtoumBundle) /!\
+/!\ This bundle is now deprecated, use [atoum/AtoumBundle](https://github.com/atoum/AtoumBundle) instead /!\
 ================
 ----
 This bundle provides a (very) simple integration of [Atoum](https://github.com/mageekguy/atoum), the unit testing framework, from [mageekguy](https://github.com/mageekguy) into Symfony2.
